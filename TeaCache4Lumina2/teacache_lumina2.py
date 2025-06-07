@@ -68,7 +68,7 @@ def teacache_forward_working(
             current_cache["accumulated_rel_l1_distance"] = 0.0
         else:
             if current_cache["previous_modulated_input"] is not None:
-                coefficients = [393.76566581, -603.50993606, 209.10239044, -23.00726601, 0.86377344] # taken from teacache_lumina_next.py
+                coefficients = [225.7042019806413, -608.8453716535591, 304.1869942338369, 124.21267720116742, -1.4089066892956552]
                 rescale_func = np.poly1d(coefficients)
                 prev_mod_input = current_cache["previous_modulated_input"]
                 prev_mean = prev_mod_input.abs().mean()
